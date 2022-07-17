@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Basic</title>
+
+    <style>
+      .container {
+        height: 915px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 55px auto 55px;
+      }
+      .item {
+        border: 3px solid black;
+      }
+      .header {
+        grid-column: 1/-1;
+      }
+      .footer {
+        grid-column: 1/-1;
+      }
+      .menu {
+        grid-column: 1 / span 2;
+      }
+      .content {
+        grid-column: 3/-1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="item one">item-1</div>
+      <div class="item two">item-2</div>
+      <div class="item three">item-3</div>
+      <div class="item four">item-4</div>
+      <div class="item five">item-5</div>
+      <div class="item six">item-6</div> -->
+
+      <div class="item one header">Header</div>
+      <div class="item two menu">Menu</div>
+      <div class="item three content">Content</div>
+      <div class="item four footer">Footer</div>
+    </div>
+  </body>
+</html>

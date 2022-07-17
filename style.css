@@ -1,0 +1,24 @@
+.one {
+  background-color: aqua;
+}
+.two {
+  background-color: #8383f7;
+}
+.three {
+  background-color: indianred;
+}
+.four {
+  background-color: blueviolet;
+}
+.five {
+  background-color: tomato;
+}
+.six {
+  background-color: lawngreen;
+}
+
+.container > div {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
